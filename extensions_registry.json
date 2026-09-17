@@ -202,6 +202,12 @@
       "name": "analytics",
       "description": "Tracks widget impressions and interactions",
       "path": "./scripts/analytics/script.js"
+    },
+    {
+      "name": "hello",
+      "path": "scripts/hello/script.js",
+      "description": "Logs a greeting to the console on every page",
+      "placement": "head"
     }
   ]
 }
