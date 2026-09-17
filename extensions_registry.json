@@ -207,7 +207,7 @@
       "name": "hello",
       "path": "./scripts/hello/script.js",
       "description": "Logs a greeting to the console on every page",
-      "placement": "bodyEnd"
+      "placement": "head"
     }
   ]
 }
