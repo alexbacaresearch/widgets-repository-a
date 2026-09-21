@@ -25,7 +25,7 @@ login.onsubmit = async (e) => {
     //alert(result.message);
   };
 
-  (async () => {
+  async () => {
   const sdk = new window.WidgetServiceSDK();
   try {
     const data = await sdk.connectors.execute({
@@ -37,4 +37,4 @@ login.onsubmit = async (e) => {
   } catch (error) {
     console.error("Connector request failed:", error);
   }
-})();
+};
