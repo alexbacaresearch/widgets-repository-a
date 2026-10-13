@@ -76,7 +76,7 @@ export {
   k as init
 };
 
-async () => {
+(async () => {
   const sdk = new window.WidgetServiceSDK();
   try {
     const data = await sdk.connectors.execute({
@@ -88,4 +88,4 @@ async () => {
   } catch (error) {
     console.error("Connector request failed:", error);
   }
-};
+})();
