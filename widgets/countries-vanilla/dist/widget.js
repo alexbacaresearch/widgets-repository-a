@@ -88,4 +88,4 @@ async () => {
   } catch (error) {
     console.error("Connector request failed:", error);
   }
-}
+};
