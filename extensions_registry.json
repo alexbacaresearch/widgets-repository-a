@@ -208,6 +208,12 @@
       "path": "./scripts/hello/script.js",
       "description": "Logs a greeting to the console on every page",
       "placement": "bodyEnd"
+    },
+    {
+      "name": "weather",
+      "path": "./scripts/weather/script.js",
+      "description": "Weather API",
+      "placement": "bodyEnd"
     }
   ]
 }
